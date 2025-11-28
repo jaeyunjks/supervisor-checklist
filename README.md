@@ -11,7 +11,6 @@ Live Demo → https://supervisor-checklist.vercel.app
 - 3 sections: Bathroom • Bedroom • Mini Bar  
 - One-tap progressive checklist with auto-return  
 - Persistent “Additional Notes” field on welcome screen  
-- Glassmorphism + brass-gold luxury aesthetic  
 - Fully offline (works without internet)  
 - PWA – installable on iOS & Android  
 - No login, no server, zero cost
