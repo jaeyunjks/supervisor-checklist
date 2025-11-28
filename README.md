@@ -1,4 +1,31 @@
+# Final Room Checklist – Luxury Mobile Web App
+
+A **30–45 second**, paperless final room inspection tool built for 5-star hotel housekeeping supervisors.  
+Zero backend · 100% offline · Installable as a native app · Feels like Rosewood/Capella in-house software.
+
+Live Demo → https://supervisor-checklist.vercel.app
+(Open on iPhone → Share → “Add to Home Screen” → becomes a real app icon)
+
+## Features
+
+- 3 sections: Bathroom • Bedroom • Mini Bar  
+- One-tap progressive checklist with auto-return  
+- Persistent “Additional Notes” field on welcome screen  
+- Glassmorphism + brass-gold luxury aesthetic  
+- Fully offline (works without internet)  
+- PWA – installable on iOS & Android  
+- No login, no server, zero cost
+
+## Tech Stack
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+- Next.js 16 (App Router + React Server Components)  
+- TypeScript  
+- Tailwind CSS v4 (custom luxury theme)  
+- Zustand + persist (state + LocalStorage)  
+- ShadCN/UI + Radix primitives  
+- Deployed on Vercel (static export)
 
 ## Getting Started
 
