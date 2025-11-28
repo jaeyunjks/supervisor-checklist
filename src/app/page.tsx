@@ -14,7 +14,7 @@ export default function Home() {
     <div className="relative min-h-screen flex flex-col justify-center p-6">
       {/* Background */}
       <Image
-        src="/bg.jpg"
+        src="/old-city-view.jpg"
         alt="Hotel"
         fill
         className="object-cover brightness-75 -z-10"
@@ -25,7 +25,7 @@ export default function Home() {
       {/* Content */}
       <div className="glass p-10 rounded-3xl max-w-md mx-auto space-y-8">
         <div className="text-center">
-          <Image src="/crest.svg" alt="Crest" width={120} height={120} className="mx-auto mb-4" />
+          <Image src="/old-city-view.jpg" alt="Crest" width={120} height={120} className="mx-auto mb-4" />
           <h1 className="text-4xl font-bold mb-2">Final Room Check</h1>
           <p className="text-[var(--primary)] text-lg">Supervisor Checklist</p>
         </div>
