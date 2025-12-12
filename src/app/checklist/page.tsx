@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useStore } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import { sections } from '@/lib/sections';
 
 const names = { bathroom: 'Bathroom', bedroom: 'Bedroom', minibar: 'Mini Bar' };
 
@@ -23,18 +24,22 @@ export default function ChecklistHome() {
             <h1 className="text-center text-4xl font-bold mb-12">Select Section</h1>
 
             <div className="space-y-6 max-w-md mx-auto">
-                {(['bathroom', 'bedroom', 'minibar'] as const).map((section) => (
-                    <Link key={section} href={`/checklist/${section}`}>
-                        <div className="glass p-8 flex justify-between items-center hover:scale-98 active:scale-95 transition-all">
-                            <span className="text-2xl font-medium">
-                                {names[section]}
-                            </span>
-                            <span className="gold-text text-5xl font-bold">
-                                {progress[section]}/{5}
-                            </span>
-                        </div>
-                    </Link>
-                ))}
+                {(['bathroom', 'bedroom', 'minibar'] as const).map((section) => {
+                    const totalItems = sections[section].length; // <-- ini yang dinamis!
+
+                    return (
+                        <Link key={section} href={`/checklist/${section}`}>
+                            <div className="glass p-8 flex justify-between items-center hover:scale-98 active:scale-95 transition-all">
+                                <span className="text-2xl font-medium">
+                                    {names[section]}
+                                </span>
+                                <span className="gold-text text-5xl font-bold">
+                                    {progress[section]}/{totalItems}
+                                </span>
+                            </div>
+                        </Link>
+                    );
+                })}
             </div>
         </div>
     );
